@@ -81,9 +81,8 @@ function draw() {
             var thisemotionlevel= detections[i].expressions[thisemotion];
              
             //FOR PANEL SAYING LEVELS
-            text(thisemotion + " value: " + thisemotionlevel,40,30 + 30 * k );
-               
-            rect(40, 30 + 30 * k, thisemotionlevel * 100,10 );
+           // text(thisemotion + " value: " + thisemotionlevel,40,30 + 30 * k );
+           // rect(40, 30 + 30 * k, thisemotionlevel * 100,10 );
             
             if(thisemotionlevel > detections[i].expressions[biggest_emotion]){
               biggest_emotion = thisemotion;
